@@ -2,7 +2,7 @@
 
 #### _{Brief description of application}_
 
-#### By _**Cat Denton {List of contributors}**_
+#### By _**Karlson Drendel and Shannon Lee {List of contributors}**_
 
 ## Technologies Used
 
@@ -11,7 +11,11 @@
 * _you used in your project_
 * _here_
 
-## Description
+Ticket.prototype.matineePrice = function() {
+  if (this.movieTime <= 1500) {
+  return this.basePrice*.75;
+  }
+}## Description
 
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
 
@@ -30,6 +34,91 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * _Any known issues_
 * _should go here_
 
+## Tests
+
+Describe: matineePrice();
+Test: "It changes the price of a movie ticket to 75% of the original"
+Expect(matineePrice()).toEqual(13.5);
+
+Describe: oldMovie();
+Test: "It changes the price of a movie ticket to 75% of the current price if it is not a new release"
+Expect(oldMovie()).toEqual(13.5);
+
+Describe: seniorPrice();
+Test: "It cuts the price of a movie ticket by 50% if the user is 65 or older"
+Expect(seniorPrice(66)).toEqual(9)
+
+
+<!-- Describe: getPrice();
+
+Test: "It returns a base price of $18"
+Expect(getPrice()).toEqual(18);
+
+Test: "It returns the 75% of the base price if the time of the movie is earlier than 3 pm"
+Expect(getPrice()).toEqual(13.5);
+
+Test: "If it's a new movie, then add $2 to the current price."
+Expect(getPrice(30)).toEqual(15.5);
+
+Test: "If the user is at least 65 years old, add a 50% discount to the current price." -->
+
+
+<!-- Describe: getPrice();
+
+Test: "It returns a base price of $18"
+Expect(getPrice()).toEqual(18);
+
+Test: "It returns the 75% of the base price if the time of the movie is earlier than 3 pm"
+Expect(getPrice()).toEqual(13.5);
+
+Test: "If it's a new movie, then add $2 to the current price."
+Expect(getPrice(30)).toEqual(15.5);
+
+Test: "If the user is at least 65 years old, add a 50% discount to the current price." -->
+
+
+<!-- Describe: getPrice();
+
+Test: "It returns a base price of $18"
+Expect(getPrice()).toEqual(18);
+
+Test: "It returns the 75% of the base price if the time of the movie is earlier than 3 pm"
+Expect(getPrice()).toEqual(13.5);
+
+Test: "If it's a new movie, then add $2 to the current price."
+Expect(getPrice(30)).toEqual(15.5);
+
+Test: "If the user is at least 65 years old, add a 50% discount to the current price." -->
+
+
+<!-- Describe: getPrice();
+
+Test: "It returns a base price of $18"
+Expect(getPrice()).toEqual(18);
+
+Test: "It returns the 75% of the base price if the time of the movie is earlier than 3 pm"
+Expect(getPrice()).toEqual(13.5);
+
+Test: "If it's a new movie, then add $2 to the current price."
+Expect(getPrice(30)).toEqual(15.5);
+
+Test: "If the user is at least 65 years old, add a 50% discount to the current price." -->
+
+
+<!-- Describe: getPrice();
+
+Test: "It returns a base price of $18"
+Expect(getPrice()).toEqual(18);
+
+Test: "It returns the 75% of the base price if the time of the movie is earlier than 3 pm"
+Expect(getPrice()).toEqual(13.5);
+
+Test: "If it's a new movie, then add $2 to the current price."
+Expect(getPrice(30)).toEqual(15.5);
+
+Test: "If the user is at least 65 years old, add a 50% discount to the current price." -->
+
+
 ## License
 
 Copyright <YEAR> <COPYRIGHT HOLDER>
@@ -43,5 +132,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 ## Contact Information
-
-_Cat Denton <willwdenton@gmail.com>_
+_Karlson Drendel <kdrendel99@gmail.com>_
+_Co-authored-by: Shannon Lee <shannonleehj@gmail.com>_
